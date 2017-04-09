@@ -52,8 +52,7 @@ const App = React.createClass({
 				resizable: true
       },
     ];
-    return { rows: [], showMe : false };
-		return { select: [] };
+    return { rows: [], showMe : false, select: [] };
   },
 
   handleGridRowsUpdated({ fromRow, toRow, updated }) {
