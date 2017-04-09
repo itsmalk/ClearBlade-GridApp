@@ -99,16 +99,13 @@ const App = React.createClass({
 
 	handleDeleteRow() {
 		const collection = cb.Collection({collectionName: "Weather"});
-		console.log(this.state.select.length)
 		let rows = this.state.rows.slice();
 		for (let i = 0; i < this.state.select.length; i++) {
-	    console.log(this.state.select[i]);
 			let query = cb.Query({collectionName: "Weather"});
 			query.equalTo('item_id', String(this.state.select[i]['id']));
 			query.remove(function() { })
 			let select = this.state.select[i]['id'];
 			rows = rows.filter(function( obj ) {
-				console.log(obj)
     		return obj['id'] !== select;
 			})
 			this.setState( { rows }, function () {
@@ -124,7 +121,6 @@ const App = React.createClass({
 	handleAddRow({ newRowIndex }) {
 	const collection = cb.Collection({collectionName: "Weather"});
 	const callback = function(err, data) {
-	    console.log(data[0]['item_id']);
 			newRow['id'] = data[0]['item_id'];
 			let rows = this.state.rows.slice();
 			rows = update(rows, {$push: [newRow]});
@@ -147,8 +143,8 @@ const App = React.createClass({
 			button =
 			<button onClick={this.onClick} style={{
 				height: 30,
-				width: 320,
-				marginTop: 10,
+ 				width: 320,
+				marginTop: 15,
 				fontSize: 14,
 			}}>Generate Spreadsheet from Collection</button>
 		} else {
@@ -157,14 +153,14 @@ const App = React.createClass({
 				<button onClick={this.handleAddRow} style={{
 					height: 30,
 					width: 260,
-					marginTop: 10,
+					marginTop: 15,
 					marginRight: 10,
 					fontSize: 14,
 				}}>+ Add Row</button>
 				<button onClick={this.handleDeleteRow} style={{
 					height: 30,
 					width: 260,
-					marginTop: 10,
+					marginTop: 15,
 					marginLeft: 10,
 					fontSize: 14,
 				}}>Delete Selected Rows</button>
@@ -174,13 +170,13 @@ const App = React.createClass({
 			<div style={{dropShadow: 30}}>
       	<div style={{
 					background: '#282727',
-					height: 140,
+					height: 160,
 					textAlign: 'center',
 				}}>
 					<div style={{
 						color: 'white',
-						paddingTop: 10,
-						fontSize: 46,
+						paddingTop: 14,
+						fontSize: 52,
 						fontWeight: 500,
 					}}>ClearBlade Grid App
 					</div>
