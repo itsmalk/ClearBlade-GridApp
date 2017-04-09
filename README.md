@@ -3,9 +3,8 @@ ClearBlade Grid App
 </h1>
 
 
-
 <p align="center">
-A live version can be found [here](http://clearblade-grid-app.surge.sh/)
+A live version can be found <a href=http://clearblade-grid-app.surge.sh/>here</a>
 </p>
 
 ---
