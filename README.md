@@ -1,12 +1,18 @@
-## ClearBlade Grid App
-
+<h1 align="center">
+ClearBlade Grid App
+</h1>
 ---
 
 A live version can be found [here](http://clearblade-grid-app.surge.sh/)
 
+---
+
+
 What it can do:
 
 * Perform one-to-one updates to a ClearBlade collection (add rows, delete rows, update values)
+
+
 
 Features:
 
