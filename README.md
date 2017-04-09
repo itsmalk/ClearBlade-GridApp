@@ -30,3 +30,6 @@ Features:
  3. From the root directory type 
  `$ http-server`
  4. Navigate to http://127.0.0.1:8080
+ 
+ Possible bug:
+The live version once failed to load the collection, although I haven't been able to recreate it.
