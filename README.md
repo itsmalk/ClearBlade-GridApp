@@ -3,9 +3,9 @@ ClearBlade Grid App
 </h1>
 
 
-<p align="center">
-A live version can be found <a href=http://clearblade-grid-app.surge.sh/>here</a>
-</p>
+
+~~A live version can be found [here](https://github.com/itsmalk/ClearBlade-GridApp)~~
+
 
 ---
 
